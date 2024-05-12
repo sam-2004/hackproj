@@ -1,0 +1,597 @@
+* {
+    margin: 0;
+    font-family: Arial;
+    box-sizing: border-box;
+}
+
+.nav-bar1 {
+    height: 70px;
+    background-color: #D9D9D9;
+    color: #2D2525;
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo1 {
+    height: 75px;
+    width: 80px;
+}
+
+.intro-line {
+    padding-left: 20px;
+    padding-right: 400px; /* Adjust as needed */
+}
+
+.main-logo {
+    background-size: cover;
+    height: 75px;
+    width: 5px;
+}
+
+.border {
+    font-size: 15px;
+}
+
+.border:hover {
+    font-size: 1px;
+}
+
+.nav1-opt {
+    font-family: sans-serif;
+    font-size: 15px; /* Corrected property */
+    color: #2D2525;
+    display: flex; /* Changed from flexbox */
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav1-opt span {
+    padding-right: 20px;
+}
+
+#s-tech {
+    height: 60px;
+    background-size: cover;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+/* nav 2 */
+.nav-bar2 {
+    margin-top: 1px;
+    height: 50px;
+    background-color: #a19b9b;
+    color: #2D2525;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    margin-left: auto; /* Align to the right */
+}
+
+.dropdown {
+    position: relative;
+    margin-right: 20px;
+}
+
+.dropdown-btn {
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* nav 3*/
+.nav-bar3 {
+    margin-top: 1px;
+    height: 30px;
+    background-color: #D9D9D9;
+    color: #2D2525;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    margin-left: auto; /* Align to the right */
+}
+
+.nav3-opt {
+    font-family: sans-serif;
+    font-size: 15px;
+    color: #2D2525;
+    display: flex; /* Changed from flexbox */
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.nav3-opt span {
+    padding-left: 30px;
+}
+
+.nav3-opt i {
+    padding: 0px 5px 0px 15px;
+    padding-right: 0px;
+}
+
+.search {
+    margin-left: 15px;
+}
+
+.homepage-imag {
+    background-size: cover;
+    background-position: center;
+    width: 100%;  
+    background-repeat: no-repeat;
+}
+
+.container1 {
+    position: relative;
+}
+
+.text-overlay1 {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 40px;
+    border-radius: 0px;
+}
+
+.text-overlay1 p {
+    margin: 0;
+    font-size: 40px;
+    color: #333;
+    text-align: left;
+}
+
+.text-overlay2 {
+    position: absolute;
+    top: 67%;
+    left: 19%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    border-radius: 0px;
+}
+
+.text-overlay2 p {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+    text-align: left;
+}
+
+.line p {
+    text-align: center;
+    font-size: 45px;
+    font-family: sans-serif;
+    color: rgba(109, 65, 38, 0.742);
+    padding: 20px;
+}
+.line{
+    margin : 20px;
+}
+/* Chatbot styles */
+.chat-container {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.chat-box {
+    height: 200px;
+    overflow-y: scroll;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.chat-input {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.chat-input input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.chat-input button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.chat-input button:hover {
+    background-color: #45a049;
+}
+/* Style for the chat container */
+.chat-container {
+    max-width: 400px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Style for the chat box */
+.chat-box {
+    padding: 10px;
+    background-color: #f2f2f2;
+    overflow-y: scroll;
+    max-height: 300px;
+}
+
+/* Style for chat input */
+.chat-input {
+    display: flex;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.chat-input input[type="text"] {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+
+.chat-input button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.chat-input button:hover {
+    background-color: #0056b3;
+}
+/* Style for the chat container */
+.chat-container {
+    max-width: 400px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the chat box */
+.chat-box {
+    padding: 15px;
+    background-color: #f9f9f9;
+    overflow-y: auto;
+    max-height: 300px;
+}
+
+/* Style for chat input */
+.chat-input {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+}
+
+.chat-input input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.chat-input button {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.chat-input button:hover {
+    background-color: #0056b3;
+}
+
+/* Style for chat message */
+.chat-message {
+    margin: 10px 0;
+}
+
+.chat-message p {
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: #007bff;
+    color: #fff;
+    max-width: 80%;
+    word-wrap: break-word;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.chat-message.bot p {
+    background-color: #28a745;
+}
+
+.chat-message.user p {
+    background-color: #007bff;
+}
+/* Style for the chat header */
+.chat-header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.chat-header img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.chat-header h3 {
+    margin: 0;
+}
+
+/* Rest of the styles remain the same */
+.dropdown {
+    position: relative;
+    display: inline-block; /* Ensure the dropdown button and content are inline */
+}
+
+.dropdown-btn {
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px; /* Add rounded corners to dropdown */
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Adjust styles for the dropdown button on hover */
+.dropdown:hover .dropdown-btn {
+    background-color: #ddd;
+}
+
+/* BUTTONS */
+.personal{
+    color: rgb(255, 255, 255);
+    background-color: #007BEF;
+    margin : 0px 60px 10px 0px;
+    height :45px;
+    font-size: 18px;
+    /* border-radius: 5px; */
+}
+
+.personal:hover{
+    
+    background-color:#0056b3
+
+}
+
+.business{
+    color: rgb(255, 255, 255);
+    background-color: #007BEF;
+    margin : 0px 0px 10px 60px;
+    height :45px;
+    font-size: 18px;
+    /* border-radius: 5px; */
+}
+
+.business:hover{
+    
+    background-color:#0056b3
+
+}
+
+.panel1{
+    background-color:#BFDBF7;
+    height:200px;
+    width : 100%;
+    padding: 30px;
+    margin:45px 0px 45px 0px;
+    display : inline-block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.panel1 p{
+    font-family: sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    color:#0f0f0f;
+    justify-content: center;
+
+}
+/* Style for the chat container */
+.chat-container {
+    max-width: 400px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* Added */
+}
+
+/* Add hover behavior for the chat container */
+
+
+/* Rest of the styles remain the same */
+/* Style for the chat container */
+.chat-container {
+    max-width: 400px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+
+/* Add hover behavior for the chat container */
+
+
+/* Rest of the styles remain the same */
+
+/* Style for the chat container */
+.chat-container {
+    position: relative;
+    max-width: 400px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the message when not chatting */
+
+/* Style for the chat container */
+.chat-container {
+    position: relative;
+    max-width: 400px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the message when not chatting */
+
+/* Your existing CSS styles */
+
+/* Style for the chat container */
+.chat-container {
+    position: relative;
+    max-width: 400px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the message when not chatting */
+
+/* Your existing CSS styles */
+
+/* Style for the chat container */
+.chat-container {
+    position: relative;
+    max-width: 400px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Your existing CSS styles */
+
+/* Style for the chat container */
+.chat-container {
+    position: relative;
+    max-width: 400px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+\/* Your existing CSS styles */
+
+/* Style for the chat container */
+.chat-container {
+    position: relative;
+    max-width: 400px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.details-section {
+    width: 100%; /* Make sections cover the entire width */
+    box-sizing: border-box; /* Include padding and border in the width */
+    padding: 20px; /* Add padding to the sections */
+    border-bottom: 4px solid #ccc; /* Add a border between sections */
+    border-bottom: 4px solid #ccc; /* Add a border between sections */
+     background-color: #BFDBF7;
+
+}
+
+.details-section p {
+    margin: 5px 0;
+}
+
+.div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

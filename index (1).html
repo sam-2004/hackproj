@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="script.js" defer></script>
+    
+</head>
+<body>
+    <header>
+        <div class="nav-bar1">
+            <div class="nav-logo1 border">
+                <div class="main-logo">
+                    <img id="s-tech" src="bank-logo-removebg-preview.png" alt="">
+                </div>
+            </div>
+            <div class="intro-line">
+                <span>S-Tech Finance<br> Website for Loans</span>
+            </div>
+            <div class="nav1-opt">
+                <div class="dropdown">
+                    <span class="dropdown-btn">Location & ATM's <i class="fas fa-caret-down"></i></span>
+                    <div class="dropdown-content">
+                        <a href="#">Yeshwantpur</a>
+                        <a href="#">Yelahanka</a>
+                        <!-- Add more locations here -->
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <span class="dropdown-btn">Contact Us <i class="fas fa-caret-down"></i></span>
+                    <div class="dropdown-content">
+                        <a href="#">Phone</a>
+                        <a href="#">Email</a>
+                        <!-- Add more contact options here -->
+                    </div>
+                </div>
+                <span>Open an Account</span>
+                <span onclick="openLoanApplicationForm()">Apply for Loan</span>
+                <span>Find a Loan Officer</span>
+            </div>
+            
+        </div>
+        <div class="nav-bar2">
+            <div class="dropdown">
+                <span class="dropdown-btn">Personal <i class="fas fa-caret-down"></i></span>
+                <div class="dropdown-content">
+                    <a href="#">Personal Loans</a>
+                    <a href="#">Personal Accounts</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <span class="dropdown-btn">Business <i class="fas fa-caret-down"></i></span>
+                <div class="dropdown-content">
+                    <a href="#">Business Loans</a>
+                    <a href="#">Business Accounts</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <span class="dropdown-btn">Grey Ledger Advisor <i class="fas fa-caret-down"></i></span>
+                <div class="dropdown-content">
+                    <a href="#">Advisory Services</a>
+                    <a href="#">Investment Planning</a>
+                </div>
+            </div>
+            <span>Giving Back</span>
+            <span>About Us</span>
+            <span>My Favorite</span>
+        </div>
+        <div class="nav-bar3">
+            <div class="nav3-opt">
+                <input class="search" type="text" placeholder="Search...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <span>Bank</span>
+                <span>Business</span>
+                <span>Resources</span>
+                <span>Current Rates</span>
+                <span>Product Selector-Tool</span>
+            </div>
+        </div>
+        <div class="container1">
+            <img class="homepage-imag" src="personal-loan-3.jpg" alt="">
+            <div class="text-overlay1">
+                <p>BETTER LENDING SOLUTIONS</p>
+            </div>
+            <div class="text-overlay2">
+                <p>Experience the confidence of having a truly local lending partner.</p>
+            </div>
+        </div>
+        <div class="line">
+            <p>HOW CAN OUR FINANCE AI BOT CAN HELP YOU?</p>
+        </div>
+        
+    </header>
+
+    <section class="apply-for-loan-section">
+        <!-- Apply for Loan content -->
+        
+
+        <!-- Chatbot container -->
+        <div class="chat-container" title="Your queries can be solved below">
+            <div class="chat-header">
+                <img src="360_F_215619203_9mmrDaPnSHOUBfz9XVkjBAknw5XFEK0D.webp" alt="Chatbot Icon">
+                <h3>Finanacebot</h3>
+            </div>
+            <div class="chat-box" id="chat-box"></div>
+            <div class="chat-input">
+                <input type="text" id="user-input" placeholder="Type anything to get started">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+        
+
+        <!-- Result container for eligibility prediction -->
+        <div id="result"></div>
+    </section>
+
+    <footer>
+        <div class="panel1">
+            <p>
+                WHAT KIND OF BANKING SERVICE OR PRODUCTS ARE YOU LOOKING FOR?
+            </p>
+            <br><div class="two-buttons">
+            <button class="personal">PERSONAL</button>
+            <button class="business">BUSINESS</button>
+            </div>
+        </div>
+
+    
+    </footer>
+    <div class="div">
+    <div class="bank-details details-section">
+        <p>Contact Details:</p>
+        <p>Phone: +1234567890</p>
+        <p>Email: info@stechfinance.com</p>
+    </div>
+
+
+    <!-- Locations -->
+    <div class="locations details-section">
+        <p>Our Locations:</p>
+        <p>Yeshwantpur Branch: near Iskon temple, 8984958472</p>
+        <p>Yelahanka Branch: Baglur cross, 8487598098</p>
+        <!-- Add more locations here -->
+    </div>
+
+
+    <!-- Other information -->
+    <div class="other-info details-section">
+        <p>Other Information:</p>
+        <p>Current Rates</p>
+        <p>Product Selector-Tool</p>
+    </div>
+</div>
+   
+</body>
+</html>
